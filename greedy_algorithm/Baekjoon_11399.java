@@ -1,5 +1,7 @@
 package greedy_algorithm;
 
+/* ATM */
+
 import java.util.Arrays;
 import java.util.Scanner;
 
