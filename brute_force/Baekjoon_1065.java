@@ -31,7 +31,6 @@ public class Baekjoon_1065 {
 		int hundreds = n/100;
 		int tens = (n/10)%10;
 		int units = n%10;
-		System.out.println(hundreds + "" + tens + "" + units);
 		return (units - tens) == (tens - hundreds);
 	}
 }
