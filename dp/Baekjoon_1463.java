@@ -2,7 +2,7 @@ package dp;
 
 import java.util.Scanner;
 
-/* 1·Î ¸¸µé±â */
+/* 1ë¡œ ë§Œë“¤ê¸° */
 
 public class Baekjoon_1463 {
 	public static int[] D;
@@ -15,7 +15,7 @@ public class Baekjoon_1463 {
 
 		sc.close();
 		
-		/* bottom-up ¹æ½Ä (ÈÎ¾À ºü¸§!!)*/
+		/* bottom-up ë°©ì‹ (í›¨ì”¬ ë¹ ë¦„!!)*/
 		for(int i=2; i<=X; i++) {
 			D[i] = D[i-1] + 1;
 			if((i % 2 == 0) && ((D[i/2]+1) < D[i]))
@@ -23,11 +23,11 @@ public class Baekjoon_1463 {
 			if((i % 3 == 0) && ((D[i/3]+1) < D[i]))
 				D[i] = D[i/3] + 1;
 		}
-		System.out.println(D[X]);	//bottom-up ¹æ½Ä
-		//System.out.println(make_1(X));	//top-down¹æ½Ä
+		System.out.println(D[X]);	//bottom-up ë°©ì‹
+		//System.out.println(make_1(X));	//top-downë°©ì‹
 	}
 
-	/* top-down ¹æ½Ä */
+	/* top-down ë°©ì‹ */
 	/*
 	public static int make_1(int X) {
 		if(X <= 1 || D[X] > 0)

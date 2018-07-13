@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/* ¼³ÅÁ ¹è´Ş */
+/* ì„¤íƒ• ë°°ë‹¬ */
 
 public class Baekjoon_2839 {
 	public static void main(String[] args) throws IOException {
@@ -18,14 +18,14 @@ public class Baekjoon_2839 {
 			break;
 		case 1:
 		case 3:
-			System.out.println(N / 5 + 1); // 1ÀÏ ¶§´Â ( N/5 - 1 ) + 2
+			System.out.println(N / 5 + 1); // 1ì¼ ë•ŒëŠ” ( N/5 - 1 ) + 2
 			break;
 		case 2:
 		case 4:
 			if ((N == 4) || (N == 7))
 				System.out.println("-1");
 			else
-				System.out.println(N / 5 + 2); // 2ÀÏ ¶§´Â ( N/5 - 2 ) + 4 , 4ÀÏ ¶§´Â ( N/5 - 1 ) + 3
+				System.out.println(N / 5 + 2); // 2ì¼ ë•ŒëŠ” ( N/5 - 2 ) + 4 , 4ì¼ ë•ŒëŠ” ( N/5 - 1 ) + 3
 			break;
 		}
 	}

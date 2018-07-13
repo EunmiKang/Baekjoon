@@ -2,7 +2,7 @@ package dp;
 
 import java.util.Scanner;
 
-/* ÇÇº¸³ªÄ¡ ÇÔ¼ö */
+/* í”¼ë³´ë‚˜ì¹˜ í•¨ìˆ˜ */
 
 public class Baekjoon_1003 {
 	public static int[][] D = new int[3][41];
@@ -10,13 +10,13 @@ public class Baekjoon_1003 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		/* Top-down ¹æ½Ä
+		/* Top-down ë°©ì‹
 		D[0][0] = 1;
 		D[1][1] = 1;
 		fibonacci(40);
 		*/
 		
-		/* Bottom-up ¹æ½Ä */
+		/* Bottom-up ë°©ì‹ */
 		D[0][0] = 1;
 		D[1][1] = 1;
 		D[2][1] = 1;
@@ -35,7 +35,7 @@ public class Baekjoon_1003 {
 		sc.close();
 	}
 	
-	/* Top-down ¹æ½Ä */
+	/* Top-down ë°©ì‹ */
 	/*
 	public static int fibonacci(int N) {
 		if(N==0) {

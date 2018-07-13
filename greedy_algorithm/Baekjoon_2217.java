@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-/* ·ÎÇÁ */
+/* ë¡œí”„ */
 
 public class Baekjoon_2217 {
 	public static void main(String[] args) throws NumberFormatException, IOException {

@@ -11,8 +11,8 @@ public class Baekjoon_11399 {
 		Scanner sc = new Scanner(System.in);
 		int result = 0;
 		
-		int N = sc.nextInt();	// »ç¶÷ ¼ö
-		int[] P = new int[N];	// °¢ »ç¶÷ÀÌ µ·À» ÀÎÃâÇÏ´Âµ¥ °É¸®´Â ½Ã°£À» ´ãÀ» ¹è¿­
+		int N = sc.nextInt();	// ì‚¬ëŒ ìˆ˜
+		int[] P = new int[N];	// ê° ì‚¬ëŒì´ ëˆì„ ì¸ì¶œí•˜ëŠ”ë° ê±¸ë¦¬ëŠ” ì‹œê°„ì„ ë‹´ì„ ë°°ì—´
 		for(int i=0; i<N; i++) {
 			P[i] = sc.nextInt();
 		}

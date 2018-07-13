@@ -2,24 +2,24 @@ package greedy_algorithm;
 
 import java.util.Scanner;
 
-/* µ¿Àü 0 */
+/* ë™ì „ 0 */
 
 public class Baekjoon_11047 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int result = 0;	//K¿øÀ» ¸¸µå´Â µ¥ ÇÊ¿äÇÑ µ¿Àü °³¼öÀÇ ÃÖ¼Ò°ª
+		int result = 0;	//Kì›ì„ ë§Œë“œëŠ” ë° í•„ìš”í•œ ë™ì „ ê°œìˆ˜ì˜ ìµœì†Œê°’
 	
-		int N = sc.nextInt();	// µ¿Àü Á¾·ù ¼ö ( 1 <= N <= 10 )
-		int K = sc.nextInt();	// µ¿ÀüµéÀ» ÀÌ¿ëÇØ ¸¸µé ÇÕ ( 1 <= K <= 100,000,000 )
-		int[] A = new int[N];	// µ¿ÀüµéÀÇ °¡Ä¡¸¦ ´ãÀ» ¹è¿­
+		int N = sc.nextInt();	// ë™ì „ ì¢…ë¥˜ ìˆ˜ ( 1 <= N <= 10 )
+		int K = sc.nextInt();	// ë™ì „ë“¤ì„ ì´ìš©í•´ ë§Œë“¤ í•© ( 1 <= K <= 100,000,000 )
+		int[] A = new int[N];	// ë™ì „ë“¤ì˜ ê°€ì¹˜ë¥¼ ë‹´ì„ ë°°ì—´
 		for(int i=0; i<N; i++) {
 			A[i] = sc.nextInt();
 		}
 		sc.close();
 		
-		for(int i=N-1; i>=0; ) {	// °¡Ä¡°¡ Å« µ¿ÀüºÎÅÍ È®ÀÎ
+		for(int i=N-1; i>=0; ) {	// ê°€ì¹˜ê°€ í° ë™ì „ë¶€í„° í™•ì¸
 			if(A[i] <= K) {
-				result++;	// µ¿Àü °¹¼ö Ãß°¡
+				result++;	// ë™ì „ ê°¯ìˆ˜ ì¶”ê°€
 				K = K-A[i];
 			} else {
 				i--;

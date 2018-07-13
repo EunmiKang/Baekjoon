@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-/* DFS¿Í BFS */
+/* DFSì™€ BFS */
 
 public class Baekjoon_1260 {
 	public static boolean[][] graph;
@@ -13,9 +13,9 @@ public class Baekjoon_1260 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		int N = sc.nextInt(); // Á¤Á¡ÀÇ °³¼ö
-		int M = sc.nextInt(); // °£¼±ÀÇ °³¼ö
-		int V = sc.nextInt(); // Å½»öÀ» ½ÃÀÛÇÒ Á¤Á¡ÀÇ ¹øÈ£
+		int N = sc.nextInt(); // ì •ì ì˜ ê°œìˆ˜
+		int M = sc.nextInt(); // ê°„ì„ ì˜ ê°œìˆ˜
+		int V = sc.nextInt(); // íƒìƒ‰ì„ ì‹œì‘í•  ì •ì ì˜ ë²ˆí˜¸
 		graph = new boolean[N + 1][N + 1];
 		visited = new boolean[N + 1];
 		for (int i = 0; i < M; i++) {

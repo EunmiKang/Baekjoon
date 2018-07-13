@@ -2,7 +2,7 @@ package brute_force;
 
 import java.util.Scanner;
 
-/* ÇÑ¼ö */
+/* í•œìˆ˜ */
 
 public class Baekjoon_1065 {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Baekjoon_1065 {
 		int X = sc.nextInt();
 		sc.close();
 
-		if (X < 100) { // 1~99´Â ¸ðµÎ ÇÑ¼ö
+		if (X < 100) { // 1~99ëŠ” ëª¨ë‘ í•œìˆ˜
 			System.out.println(X);
 		} else {
 			int result = 99;
@@ -27,7 +27,7 @@ public class Baekjoon_1065 {
 		}
 	}
 
-	public static boolean isHanNum(int n) {	// n:¼¼ÀÚ¸®¼ö
+	public static boolean isHanNum(int n) {	// n:ì„¸ìžë¦¬ìˆ˜
 		int hundreds = n/100;
 		int tens = (n/10)%10;
 		int units = n%10;

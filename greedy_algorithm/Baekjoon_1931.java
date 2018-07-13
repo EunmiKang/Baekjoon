@@ -1,6 +1,6 @@
 package greedy_algorithm;
 
-/* È¸ÀÇ½Ç¹èÁ¤ */
+/* íšŒì˜ì‹¤ë°°ì • */
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -11,7 +11,7 @@ public class Baekjoon_1931 {
 		Scanner sc = new Scanner(System.in);
 		int result = 0;
 		
-		int N = sc.nextInt();	// È¸ÀÇ ¼ö
+		int N = sc.nextInt();	// íšŒì˜ ìˆ˜
 		Meeting[] meetings = new Meeting[N];
 		for(int i=0; i<N; i++) {
 			meetings[i] = new Meeting(sc.nextInt(), sc.nextInt());
@@ -44,7 +44,7 @@ public class Baekjoon_1931 {
 	public static class CompareMeeting implements Comparator<Meeting> {
 
 		@Override
-		public int compare(Meeting m1, Meeting m2) {	// ³¡³ª´Â ½Ã°£ÀÌ ºü¸¥ ¼øÀ¸·Î Á¤·Ä(°°À¸¸é ½ÃÀÛ ½Ã°£ÀÌ ºü¸¥ ¼ø¼­)
+		public int compare(Meeting m1, Meeting m2) {	// ëë‚˜ëŠ” ì‹œê°„ì´ ë¹ ë¥¸ ìˆœìœ¼ë¡œ ì •ë ¬(ê°™ìœ¼ë©´ ì‹œì‘ ì‹œê°„ì´ ë¹ ë¥¸ ìˆœì„œ)
 			if(m1.finish < m2.finish) {
 				return -1;
 			} else if(m1.finish == m2.finish) {
