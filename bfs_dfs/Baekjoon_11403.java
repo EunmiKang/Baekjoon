@@ -3,7 +3,6 @@ package bfs_dfs;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -27,15 +26,27 @@ public class Baekjoon_11403 {
 		}
 		br.close();
 
+		/*
 		for (int i = 0; i < N; i++)
 			for (int j = 0; j < N; j++)
 				if (isPath[i][j] == 0)
 					if (isPath(i, j))
 						isPath[i][j] = 1;
+		*/
+		
+		/* 플로이드 와샬 알고리즘 (더 빠름)*/
+		for(int k=0; k<N; k++) {
+			for(int i=0; i<N; i++) {
+				for(int j=0; j<N; j++) {
+					if(G[i][k] == 1 && G[k][j] == 1)
+						G[i][j] = 1;
+				}
+			}
+		}
 
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++)
-				System.out.print(isPath[i][j] + " ");
+				System.out.print(G[i][j] + " ");
 			System.out.println();
 		}
 	}
