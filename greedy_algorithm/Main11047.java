@@ -2,11 +2,12 @@ package greedy_algorithm;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 /**
  * 
  * @author EunmiKang
  * 동전 0
+ * ::
+ * greedy
  *
  */
 public class Main11047 {
@@ -22,11 +23,13 @@ public class Main11047 {
 		} //동전 가치 배열 초기화	
 		br.close();
 		
-		/* 문제 풀이 */
+		/* 문제 풀이 - getResult()가 더 빠름 ㅎ */
 		int result = getResult(K, A);
+		//int result2 = getResult2(K, A);
 		
 		/* 출력 */
 		System.out.println(result);
+		//System.out.println(result2);
 	}
 	
 	private static int getResult(int K, int[] A) {
